@@ -22,7 +22,8 @@ async function app () {
 
 app()
 .then(ok => {
-  console.log(ok);
+  let message = ok ? ok : 'process is done';
+  console.log(message)
 })
 .catch(e => {
   console.log(e);
